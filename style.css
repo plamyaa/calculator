@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap');
+
+body {
+    font-family:'Work Sans', sans-serif;
+}
+
+:root {
+    --calc-background: #17171C;
+    --calc-num-buttons: #2E2F38;
+    --calc-operator: #4B5EFC;
+    --calc-clear-button: #4E505F;
+    --calc-numbers: #FFFFFF;
+}
+
+.container {
+    width: 364px;
+    background-color: var(--calc-background);
+    margin: 50px auto;
+    display: flex;
+    height: 582px;
+}
+
+.content {
+    width: 324px;
+    padding: 21px 20px ;
+}
+
+.calc__output {
+    height: 96px;
+}
+.output__number{
+    float: right;
+    font-size: 96px;
+    color: var(--calc-numbers);
+    line-height: 96px;
+    font-weight: 300;
+}
+.calc__buttons {
+    display: grid;
+    padding-top: 16px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,72px);
+    grid-gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+.buttons {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--calc-numbers);
+    border-radius: 24px;
+    background-color: var(--calc-num-buttons);
+    line-height: 72px;
+    transition: all .3s;
+}
+
+button:hover{
+    background-color: #4E505A;
+}
+
+.clear {
+    background-color: var(--calc-clear-button);
+    width: 153px;
+    grid-column: 1/3;
+}
+
+.zero {
+    width: 238px;
+    grid-column: 1/4;
+}
+
+.operation, .equal {
+    background-color: var(--calc-operator);
+}
+button {
+    border: 0;
+}

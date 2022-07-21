@@ -100,8 +100,3 @@ calcBtnClear.addEventListener('click', function(){
     globalCounter = 0;
     operationCounter = 0;
 });
-
-
-document.body.onclick = function() {
-    alert("work");
-}

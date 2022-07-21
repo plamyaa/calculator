@@ -1,6 +1,6 @@
 # Calculator App
 ## What is the project about: 
-This is my first app. Small calculator with a beautiful interface made from figma
+This is my first app. Small calculator with a beautiful interface. Made from figma.
 ## Stack:
 JavaScript
 ## [Demo](https://plamyaa.github.io/calculator/)
